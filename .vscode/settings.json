@@ -1,0 +1,11 @@
+{
+    "debug.javascript.defaultRuntimeExecutable": {
+        "pwa-node": "node"
+    },
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\Users\\leosk\\OneDrive - New Mexico State University\\Documents\\CSCI1720\\proyect2\\lib\\painter-canvas-complete.jar"
+    ]
+}

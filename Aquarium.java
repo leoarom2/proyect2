@@ -7,10 +7,12 @@ public class Aquarium {
         CanvasAPI canvas = Graphics.createCanvas(800, 600, "My First Drawing");
         PainterAPI painter = canvas.getPainter();
         painter.setSpeed(10); // Lower number means faster, zero means as fast as possible. 
-        drawBubbles(painter, 30);
-        drawFish(painter);
-        drawSeaWeed(painter);
-        drawStarfish(painter);
+       // drawBubbles(painter, 30);
+        //drawFish(painter);
+        drawTurtle(painter);
+        //drawSeaWeed(painter);
+        //drawStarfish(painter);
+        //drawTreasureChest(painter);
     }
     public static void drawSquare(PainterAPI painter, int size) {
             for (int i = 0; i < 4; i++) {
@@ -46,7 +48,11 @@ public class Aquarium {
         }
     }
     public static void drawFish(PainterAPI painter) {
-       painter.circle(30);
+        painter.circle(30);
+        painter.liftPen();
+        painter.moveTo(-65, 20);
+        painter.lowerPen();
+        drawTriangle(painter, 40);
         
     }
     public static void drawStarfish(PainterAPI painter) {
@@ -55,4 +61,11 @@ public class Aquarium {
             painter.turnRight(144);
         }
     }
+    public static void drawTriangle(PainterAPI painter, int size) {
+        for(int i = 0; i < 3; i++) {
+            painter.forward(size);
+            painter.turnRight(120);
+        }
+    }
+    
 }

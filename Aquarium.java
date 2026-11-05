@@ -62,7 +62,7 @@ public class Aquarium {
             }
         }
     
-        public static void drawRectangle(PainterAPI painter, int width, int height) {
+    public static void drawRectangle(PainterAPI painter, int width, int height) {
             for(int i = 0; i < 2; i++) {
                 painter.forward(width);
                 painter.turnRight(90);
@@ -70,7 +70,7 @@ public class Aquarium {
                 painter.turnRight(90);
             }
         }
-        public static void drawTreasureChest(PainterAPI painter) {
+    public static void drawTreasureChest(PainterAPI painter) {
         painter.startFill(new Color(139,69,19));
         drawRectangle(painter, 60, 40);
         painter.finishFill();
@@ -140,14 +140,7 @@ public class Aquarium {
         painter.moveTo(x, y);
         painter.lowerPen();
     }
-    public static void drawSand(PainterAPI painter) {
-        for(int i = 0; i < 30; i++) {
-            painter.forward(500);
-            painter.turnLeft(10);
-            painter.forward(200);
-            painter.turnRight(10);
-        }
-    }
+
        
     public static void drawSandFloor(PainterAPI painter) {
         painter.startFill(Color.YELLOW);
